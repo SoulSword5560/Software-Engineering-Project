@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="databaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="500" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="URL" Type="nvarchar" MaxLength="500" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="BookQNA">
+          <Key>
+            <PropertyRef Name="bookID" />
+            <PropertyRef Name="qnaID" />
+          </Key>
+          <Property Name="bookID" Type="int" Nullable="false" />
+          <Property Name="qnaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MessageTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Template" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MyBookList">
+          <Key>
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="bookID" />
+          </Key>
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="bookID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MyNoteList">
+          <Key>
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="noteID" />
+          </Key>
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="noteID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MyVideoList">
+          <Key>
+            <PropertyRef Name="userID" />
+            <PropertyRef Name="videoID" />
+          </Key>
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="videoID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Note">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="500" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Notification">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="userID" Type="int" Nullable="false" />
+          <Property Name="messageID" Type="int" />
+          <Property Name="time_created" Type="datetime" />
+          <Property Name="is_read" Type="bit" />
+        </EntityType>
+        <EntityType Name="QNA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="questionURL" Type="nvarchar" MaxLength="500" />
+          <Property Name="answerURL" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="DOB" Type="date" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Video">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="URL" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK_BookQNA_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="BookQNA" Type="Self.BookQNA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookQNA">
+              <PropertyRef Name="bookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BookQNA_QNA">
+          <End Role="QNA" Type="Self.QNA" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="BookQNA" Type="Self.BookQNA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="QNA">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookQNA">
+              <PropertyRef Name="qnaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyBookList_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyBookList" Type="Self.MyBookList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MyBookList">
+              <PropertyRef Name="bookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyBookList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyBookList" Type="Self.MyBookList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyBookList">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyNoteList_Note">
+          <End Role="Note" Type="Self.Note" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyNoteList" Type="Self.MyNoteList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Note">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MyNoteList">
+              <PropertyRef Name="noteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyNoteList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyNoteList" Type="Self.MyNoteList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyNoteList">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyVideoList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyVideoList" Type="Self.MyVideoList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MyVideoList">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MyVideoList_Video">
+          <End Role="Video" Type="Self.Video" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MyVideoList" Type="Self.MyVideoList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Video">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MyVideoList">
+              <PropertyRef Name="videoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notifications_Message">
+          <End Role="MessageTemplate" Type="Self.MessageTemplate" Multiplicity="0..1" />
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MessageTemplate">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="messageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notifications_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="databaseModelStoreContainer">
+          <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BookQNA" EntityType="Self.BookQNA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MessageTemplate" EntityType="Self.MessageTemplate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyBookList" EntityType="Self.MyBookList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyNoteList" EntityType="Self.MyNoteList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyVideoList" EntityType="Self.MyVideoList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Note" EntityType="Self.Note" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="QNA" EntityType="Self.QNA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Video" EntityType="Self.Video" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_BookQNA_Book" Association="Self.FK_BookQNA_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="BookQNA" EntitySet="BookQNA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BookQNA_QNA" Association="Self.FK_BookQNA_QNA">
+            <End Role="QNA" EntitySet="QNA" />
+            <End Role="BookQNA" EntitySet="BookQNA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyBookList_Book" Association="Self.FK_MyBookList_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="MyBookList" EntitySet="MyBookList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyBookList_User" Association="Self.FK_MyBookList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="MyBookList" EntitySet="MyBookList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyNoteList_Note" Association="Self.FK_MyNoteList_Note">
+            <End Role="Note" EntitySet="Note" />
+            <End Role="MyNoteList" EntitySet="MyNoteList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyNoteList_User" Association="Self.FK_MyNoteList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="MyNoteList" EntitySet="MyNoteList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyVideoList_User" Association="Self.FK_MyVideoList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="MyVideoList" EntitySet="MyVideoList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MyVideoList_Video" Association="Self.FK_MyVideoList_Video">
+            <End Role="Video" EntitySet="Video" />
+            <End Role="MyVideoList" EntitySet="MyVideoList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notifications_Message" Association="Self.FK_Notifications_Message">
+            <End Role="MessageTemplate" EntitySet="MessageTemplate" />
+            <End Role="Notification" EntitySet="Notification" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notifications_User" Association="Self.FK_Notifications_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Notification" EntitySet="Notification" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="URL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="QNAs" Relationship="Self.BookQNA" FromRole="Book" ToRole="QNA" />
+          <NavigationProperty Name="Users" Relationship="Self.MyBookList" FromRole="Book" ToRole="User" />
+        </EntityType>
+        <EntityType Name="MessageTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Template" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Notifications" Relationship="Self.FK_Notifications_Message" FromRole="MessageTemplate" ToRole="Notification" />
+        </EntityType>
+        <EntityType Name="Note">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="Self.MyNoteList" FromRole="Note" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Notification">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userID" Type="Int32" Nullable="false" />
+          <Property Name="messageID" Type="Int32" />
+          <Property Name="time_created" Type="DateTime" Precision="3" />
+          <Property Name="is_read" Type="Boolean" />
+          <NavigationProperty Name="MessageTemplate" Relationship="Self.FK_Notifications_Message" FromRole="Notification" ToRole="MessageTemplate" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Notifications_User" FromRole="Notification" ToRole="User" />
+        </EntityType>
+        <EntityType Name="QNA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="questionURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="answerURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Books" Relationship="Self.BookQNA" FromRole="QNA" ToRole="Book" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Notifications" Relationship="Self.FK_Notifications_User" FromRole="User" ToRole="Notification" />
+          <NavigationProperty Name="Books" Relationship="Self.MyBookList" FromRole="User" ToRole="Book" />
+          <NavigationProperty Name="Notes" Relationship="Self.MyNoteList" FromRole="User" ToRole="Note" />
+          <NavigationProperty Name="Videos" Relationship="Self.MyVideoList" FromRole="User" ToRole="Video" />
+        </EntityType>
+        <EntityType Name="Video">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="URL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="Self.MyVideoList" FromRole="Video" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_Notifications_Message">
+          <End Role="MessageTemplate" Type="Self.MessageTemplate" Multiplicity="0..1" />
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MessageTemplate">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="messageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notifications_User">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Notification">
+              <PropertyRef Name="userID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BookQNA">
+          <End Role="Book" Type="Self.Book" Multiplicity="*" />
+          <End Role="QNA" Type="Self.QNA" Multiplicity="*" />
+        </Association>
+        <Association Name="MyBookList">
+          <End Role="Book" Type="Self.Book" Multiplicity="*" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+        </Association>
+        <Association Name="MyNoteList">
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+        </Association>
+        <Association Name="MyVideoList">
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <End Role="Video" Type="Self.Video" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="databaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="Self.Book" />
+          <EntitySet Name="MessageTemplates" EntityType="Self.MessageTemplate" />
+          <EntitySet Name="Notes" EntityType="Self.Note" />
+          <EntitySet Name="Notifications" EntityType="Self.Notification" />
+          <EntitySet Name="QNAs" EntityType="Self.QNA" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="Videos" EntityType="Self.Video" />
+          <AssociationSet Name="FK_Notifications_Message" Association="Self.FK_Notifications_Message">
+            <End Role="MessageTemplate" EntitySet="MessageTemplates" />
+            <End Role="Notification" EntitySet="Notifications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notifications_User" Association="Self.FK_Notifications_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Notification" EntitySet="Notifications" />
+          </AssociationSet>
+          <AssociationSet Name="BookQNA" Association="Self.BookQNA">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="QNA" EntitySet="QNAs" />
+          </AssociationSet>
+          <AssociationSet Name="MyBookList" Association="Self.MyBookList">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="MyNoteList" Association="Self.MyNoteList">
+            <End Role="Note" EntitySet="Notes" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="MyVideoList" Association="Self.MyVideoList">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Video" EntitySet="Videos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+          <EntitySetMapping Name="Books">
+            <EntityTypeMapping TypeName="databaseModel.Book">
+              <MappingFragment StoreEntitySet="Book">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageTemplates">
+            <EntityTypeMapping TypeName="databaseModel.MessageTemplate">
+              <MappingFragment StoreEntitySet="MessageTemplate">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notes">
+            <EntityTypeMapping TypeName="databaseModel.Note">
+              <MappingFragment StoreEntitySet="Note">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notifications">
+            <EntityTypeMapping TypeName="databaseModel.Notification">
+              <MappingFragment StoreEntitySet="Notification">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="messageID" ColumnName="messageID" />
+                <ScalarProperty Name="time_created" ColumnName="time_created" />
+                <ScalarProperty Name="is_read" ColumnName="is_read" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QNAs">
+            <EntityTypeMapping TypeName="databaseModel.QNA">
+              <MappingFragment StoreEntitySet="QNA">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="questionURL" ColumnName="questionURL" />
+                <ScalarProperty Name="answerURL" ColumnName="answerURL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="databaseModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Videos">
+            <EntityTypeMapping TypeName="databaseModel.Video">
+              <MappingFragment StoreEntitySet="Video">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="BookQNA" TypeName="databaseModel.BookQNA" StoreEntitySet="BookQNA">
+            <EndProperty Name="Book">
+              <ScalarProperty Name="ID" ColumnName="bookID" />
+            </EndProperty>
+            <EndProperty Name="QNA">
+              <ScalarProperty Name="ID" ColumnName="qnaID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="MyBookList" TypeName="databaseModel.MyBookList" StoreEntitySet="MyBookList">
+            <EndProperty Name="Book">
+              <ScalarProperty Name="ID" ColumnName="bookID" />
+            </EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="Id" ColumnName="userID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="MyNoteList" TypeName="databaseModel.MyNoteList" StoreEntitySet="MyNoteList">
+            <EndProperty Name="Note">
+              <ScalarProperty Name="ID" ColumnName="noteID" />
+            </EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="Id" ColumnName="userID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="MyVideoList" TypeName="databaseModel.MyVideoList" StoreEntitySet="MyVideoList">
+            <EndProperty Name="User">
+              <ScalarProperty Name="Id" ColumnName="userID" />
+            </EndProperty>
+            <EndProperty Name="Video">
+              <ScalarProperty Name="ID" ColumnName="videoID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
