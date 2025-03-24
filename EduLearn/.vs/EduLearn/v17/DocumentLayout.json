@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\pattern software\\EduLearn\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\template\\template.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\template\\template.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\template\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\template\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\book\\book.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\book\\book.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "book.css",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\book\\book.css",
+              "RelativeDocumentMoniker": "EduLearn\\view\\book\\book.css",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\book\\book.css",
+              "RelativeToolTip": "EduLearn\\view\\book\\book.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-24T06:12:47.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "books.aspx",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\book\\books.aspx",
+              "RelativeDocumentMoniker": "EduLearn\\view\\book\\books.aspx",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\book\\books.aspx",
+              "RelativeToolTip": "EduLearn\\view\\book\\books.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-24T05:58:03.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "template.css",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\template.css",
+              "RelativeDocumentMoniker": "EduLearn\\view\\template\\template.css",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\template.css",
+              "RelativeToolTip": "EduLearn\\view\\template\\template.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-24T05:36:54.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "navbar.Master",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\navbar.Master",
+              "RelativeDocumentMoniker": "EduLearn\\view\\template\\navbar.Master",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\navbar.Master",
+              "RelativeToolTip": "EduLearn\\view\\template\\navbar.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-24T05:23:20.634Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

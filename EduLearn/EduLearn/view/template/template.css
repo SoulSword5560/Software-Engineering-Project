@@ -1,0 +1,131 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout Styling */
+body, html {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background-color: #7B7B7B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+    .sidebar .logo {
+        text-align: center;
+        font-size: 35px;
+        color: #E74C3C;
+        font-family: 'Jaro';
+    }
+
+    .sidebar .menu {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar .menu li {
+            padding: 15px 20px;
+        }
+
+            .sidebar .menu li a {
+                text-decoration: none;
+                color: white;
+                display: block;
+                transition: background 0.3s;
+                font-family: 'Jaro';
+                font-size: 20px;
+            }
+
+                .sidebar .menu li a:hover {
+                    background-color: #34495E;
+                    border-radius: 5px;
+                }
+
+/* User Profile Section */
+.user-profile {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #34495E;
+}
+
+    .user-profile img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .user-profile p {
+        font-size: 14px;
+        color: #BDC3C7;
+    }
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1; /* Ensure it takes all the remaining space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    min-width: 0; /* Prevent shrinking issues */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    header h2 {
+        font-size: 28px;
+        color: #2C3E50;
+    }
+
+/* Search Bar */
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Icons */
+.icon {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+    .icon:hover {
+        color: #E74C3C;
+    }
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+}

@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="navbar.master.cs" Inherits="EduLearn.view.navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro&display=swap" rel="stylesheet">
+    <title>EduLearn</title>
+    <link rel="stylesheet" type="text/css" href="template.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <!-- Sidebar Navbar -->
+            <nav class="sidebar">
+                <div class="logo">
+                    <h2>EduLearn</h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="dashboard.aspx">Dashboard</a></li>
+                    <li><a href="library.aspx">My Library</a></li>
+                    <li><a href="saved-videos.aspx">Saved Videos</a></li>
+                    <li><a href="tutorials.aspx">Tutorial Video</a></li>
+                    <li><a href="books.aspx">Books</a></li>
+                    <li><a href="notes.aspx">Notes</a></li>
+                    <li><a href="qa.aspx">Question & Answers</a></li>
+                    <li><a href="settings.aspx">Settings</a></li>
+                </ul>
+                <div class="user-profile">
+                    <img src="profile.png" alt="User">
+                    <p></p>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <header>
+                    <asp:ContentPlaceHolder ID="pageTitle" runat="server"></asp:ContentPlaceHolder>
+                    <div class="topbar">
+                        <input type="text" placeholder="Search..." class="search-bar" />
+                        <a href="#" class="icon settings-icon">⚙</a>
+                        <a href="#" class="icon notif-icon">🔔</a>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

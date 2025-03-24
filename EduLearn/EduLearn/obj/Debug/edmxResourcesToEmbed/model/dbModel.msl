@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="databaseModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageTemplates">
+      <EntityTypeMapping TypeName="databaseModel.MessageTemplate">
+        <MappingFragment StoreEntitySet="MessageTemplate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notes">
+      <EntityTypeMapping TypeName="databaseModel.Note">
+        <MappingFragment StoreEntitySet="Note">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="databaseModel.Notification">
+        <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="messageID" ColumnName="messageID" />
+          <ScalarProperty Name="time_created" ColumnName="time_created" />
+          <ScalarProperty Name="is_read" ColumnName="is_read" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QNAs">
+      <EntityTypeMapping TypeName="databaseModel.QNA">
+        <MappingFragment StoreEntitySet="QNA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="questionURL" ColumnName="questionURL" />
+          <ScalarProperty Name="answerURL" ColumnName="answerURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="databaseModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Videos">
+      <EntityTypeMapping TypeName="databaseModel.Video">
+        <MappingFragment StoreEntitySet="Video">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="BookQNA" TypeName="databaseModel.BookQNA" StoreEntitySet="BookQNA">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="ID" ColumnName="bookID" />
+      </EndProperty>
+      <EndProperty Name="QNA">
+        <ScalarProperty Name="ID" ColumnName="qnaID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MyBookList" TypeName="databaseModel.MyBookList" StoreEntitySet="MyBookList">
+      <EndProperty Name="Book">
+        <ScalarProperty Name="ID" ColumnName="bookID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="userID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MyNoteList" TypeName="databaseModel.MyNoteList" StoreEntitySet="MyNoteList">
+      <EndProperty Name="Note">
+        <ScalarProperty Name="ID" ColumnName="noteID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="userID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MyVideoList" TypeName="databaseModel.MyVideoList" StoreEntitySet="MyVideoList">
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="userID" />
+      </EndProperty>
+      <EndProperty Name="Video">
+        <ScalarProperty Name="ID" ColumnName="videoID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
