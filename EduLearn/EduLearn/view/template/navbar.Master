@@ -28,8 +28,7 @@
                     <li><a href="settings.aspx">Settings</a></li>
                 </ul>
                 <div class="user-profile">
-                    <img src="profile.png" alt="User">
-                    <p></p>
+                    <asp:HyperLink ID="namee" runat="server" NavigateUrl="~/view/account/account.aspx">HyperLink</asp:HyperLink>
                 </div>
             </nav>
 

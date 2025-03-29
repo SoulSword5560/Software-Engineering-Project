@@ -66,17 +66,10 @@ body, html {
     padding: 10px;
     border-top: 1px solid #34495E;
 }
-
-    .user-profile img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-
-    .user-profile p {
-        font-size: 14px;
-        color: #BDC3C7;
+    .user-profile #namee {
+        margin: 10px;
+        text-decoration: none;
+        color:aliceblue;
     }
 
 /* Main Content Styling */
@@ -128,4 +121,8 @@ header {
 /* Content Area */
 .content {
     flex-grow: 1;
+    width: 100%;
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
 }
+

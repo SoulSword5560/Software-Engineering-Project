@@ -11,7 +11,14 @@ namespace EduLearn.view
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.Cookies["user"] != null && Request.Cookies["user"] != null)
+            {
+                namee.Text =  Request.Cookies["user"]["name"];
+            }
+            else if (Session["user"] != null)
+            {
+                namee.Text = Session["user"].ToString();
+            }
         }
     }
 }
