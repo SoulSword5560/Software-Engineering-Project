@@ -89,12 +89,24 @@
       <DependentUpon>dbModel.edmx</DependentUpon>
       <LastGenOutput>dbModel.cs</LastGenOutput>
     </Content>
+    <Content Include="view\account\account.aspx" />
+    <Content Include="view\account\account.css" />
+    <Content Include="view\authentication\login.aspx" />
+    <Content Include="view\authentication\login.css" />
+    <Content Include="view\authentication\register.aspx" />
+    <Content Include="view\authentication\register.css" />
+    <Content Include="view\authentication\resetPass.aspx" />
+    <Content Include="view\authentication\resetPass.css" />
     <Content Include="view\book\book.css" />
     <Content Include="view\book\books.aspx" />
+    <Content Include="view\home\home.aspx" />
+    <Content Include="view\home\home.css" />
     <Content Include="view\template\template.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="factory\userFactorycs.cs" />
+    <Compile Include="handler\userHandler.cs" />
     <Compile Include="model\Book.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
@@ -132,12 +144,49 @@
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repository\dbSingleton.cs" />
+    <Compile Include="repository\userRepo.cs" />
+    <Compile Include="view\account\account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\account\account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\authentication\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\authentication\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\authentication\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\authentication\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\authentication\resetPass.aspx.cs">
+      <DependentUpon>resetPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\authentication\resetPass.aspx.designer.cs">
+      <DependentUpon>resetPass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\book\books.aspx.cs">
       <DependentUpon>books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="view\book\books.aspx.designer.cs">
       <DependentUpon>books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\home\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\home\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\template\navbar.Master.cs">
       <DependentUpon>navbar.Master</DependentUpon>
@@ -167,6 +216,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
