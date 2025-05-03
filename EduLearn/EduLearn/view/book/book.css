@@ -1,11 +1,35 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+﻿
 body {
+    font-family:'Jaro';
 }
 h1 {
     font-size: 35px;
     font-family: 'Jaro';
 }
+/*#ContentPlaceHolder1 .book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;*/ /* Add this */
+    /*margin: 0 auto;
+}
+
+#ContentPlaceHolder1 .book-item {
+    flex: 0 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#ContentPlaceHolder1 .book-item img {
+        width: 100%;
+        max-height: 250px;*/ /* Limit height */
+        /*object-fit: contain;*/ /* Preserve aspect ratio */
+        /*border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+#ContentPlaceHolder1 .book-item p{
+
+}*/

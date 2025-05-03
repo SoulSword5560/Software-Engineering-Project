@@ -7,4 +7,104 @@
 <link href="https://fonts.googleapis.com/css2?family=Jaro&display=swap" rel="stylesheet">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        body{
+            font-family: 'Jaro';
+        }
+        .home-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-section {
+    width: 70%;
+}
+
+.right-section {
+    width: 28%;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.video-section, .book-section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.book-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.book-card {
+    width: 100px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book-card a {
+    text-decoration:none;
+    font-family: 'Jaro';
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.placeholder-container {
+    height: 300px;
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+
+    </style>
+
+     <div class="home-container">
+        <!-- Left Section (Video + Books) -->
+        <div class="left-section">
+            <!-- YouTube Video Section -->
+            <div class="video-section">
+                <h2>Tutorials</h2>
+               <iframe width="100%" height="315" frameborder="0" allowfullscreen
+        src="<%= GetYouTubeEmbedUrl() %>"></iframe>
+            </div>
+
+            <!-- Book Section -->
+            <div class="book-section">
+                <h2>Books</h2>
+                <div class="book-grid">
+                    <asp:Repeater ID="bookRepeater" runat="server">
+                        <ItemTemplate>
+                            <div class="book-card">
+                                <a href='<%# Eval("URL") %>' target="_blank">
+                                <img src='<%# Eval("Image") %>' alt="Book Cover" />
+                                <p><%# Eval("Name") %></p>
+                                </a>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Notes | Questions & Answers</h2>
+            <div class="placeholder-container">
+                <!-- Future content goes here -->
+            </div>
+        </div>
+    </div>
 </asp:Content>
