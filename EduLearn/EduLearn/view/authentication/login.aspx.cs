@@ -31,8 +31,10 @@ namespace EduLearn.view.authentication
 				return;
 			}
 			Session["user"]=user;
+			Session["id"] = user.Id;
 			HttpCookie cookie = new HttpCookie("user");
 			cookie["name"] = user.Name;
+			cookie["id"] = user.Id.ToString();
 			cookie.Expires = DateTime.Now.AddDays(2);
 			Response.Cookies.Add(cookie);
 			Response.Redirect("~/View/home/home.aspx");
