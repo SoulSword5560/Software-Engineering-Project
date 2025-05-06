@@ -21,7 +21,7 @@
                     <li><a href="<%= ResolveUrl("~/view/home/ho.aspx") %>">Dashboard</a></li>
                     <li><a href='<%= ResolveUrl("~/view/library/libraries.aspx") %>'>My Library</a></li>
                     <li><a href="saved-videos.aspx">Saved Videos</a></li>
-                    <li><a href="tutorials.aspx">Tutorial Video</a></li>
+                    <li><a href='<%= ResolveUrl("~/view/video/video.aspx") %>'>Tutorial Video</a></li>
                     <li><a href='<%= ResolveUrl("~/view/book/books.aspx") %>'>Books</a></li>
                     <li><a href="notes.aspx">Notes</a></li>
                     <li><a href="qa.aspx">Question & Answers</a></li>
