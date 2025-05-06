@@ -104,6 +104,7 @@
     <Content Include="view\library\libraries.aspx" />
     <Content Include="view\library\library.css" />
     <Content Include="view\template\template.css" />
+    <Content Include="view\video\video.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +206,13 @@
     </Compile>
     <Compile Include="view\template\navbar.Master.designer.cs">
       <DependentUpon>navbar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="view\video\video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\video\video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
