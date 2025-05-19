@@ -18,12 +18,12 @@
                     <h2>EduLearn</h2>
                 </div>
                 <ul class="menu">
-                    <li><a href="<%= ResolveUrl("~/view/home/ho.aspx") %>">Dashboard</a></li>
+                    <li><a href="<%= ResolveUrl("~/view/home/home.aspx") %>">Dashboard</a></li>
                     <li><a href='<%= ResolveUrl("~/view/library/libraries.aspx") %>'>My Library</a></li>
-                    <li><a href="saved-videos.aspx">Saved Videos</a></li>
+                    <li><a href='<%= ResolveUrl("~/view/savedVideos/savedVideos.aspx") %>'>Saved Videos</a></li>
                     <li><a href='<%= ResolveUrl("~/view/video/video.aspx") %>'>Tutorial Video</a></li>
                     <li><a href='<%= ResolveUrl("~/view/book/books.aspx") %>'>Books</a></li>
-                    <li><a href="notes.aspx">Notes</a></li>
+                    <li><a href='<%= ResolveUrl("~/view/Notes/note.aspx") %>'>Notes</a></li>
                     <li><a href="qa.aspx">Question & Answers</a></li>
                     <li><a href="settings.aspx">Settings</a></li>
                 </ul>
