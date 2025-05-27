@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using EduLearn.model;
 using EduLearn.repository;
+using EduLearn.view.Notes;
 
 namespace EduLearn.view.home
 {
@@ -14,6 +15,7 @@ namespace EduLearn.view.home
 	{
         videRepo videRepo = new videRepo();
         bookRepo bookRepo = new bookRepo();
+        noteRepo noteRepo = new noteRepo();
         private string connectionString = @"data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\database.mdf;integrated security=True";
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -35,6 +37,21 @@ namespace EduLearn.view.home
 
             bookRepeater.DataSource = books;
             bookRepeater.DataBind();
+
+            string userID;
+            if (Session["id"] != null)
+            {
+                userID = Session["id"].ToString();
+            }
+            else
+            {
+                userID = Request.Cookies["user"]["id"].ToString();
+            }
+
+            int UserId = Convert.ToInt32(userID);
+            List<Note> notes = noteRepo.GetUserNotes(UserId);
+            notesRepeater.DataSource = notes;
+            notesRepeater.DataBind();
         }
 
         private void LoadYouTubeVideo()
@@ -63,34 +80,8 @@ namespace EduLearn.view.home
         public string GetYouTubeEmbedUrl()
         {
             string videoUrl = videRepo.getFirstVideo();
-            return ConvertToEmbed(videoUrl) ?? "about:blank"; // Fallback if URL is invalid
+            return videRepo.ConvertToEmbed(videoUrl) ?? "about:blank"; // Fallback if URL is invalid
         }
-        private string ConvertToEmbed(string url)
-        {
-            try
-            {
-                Uri uri = new Uri(url);
-                string host = uri.Host.ToLower();
-
-                if (host.Contains("youtu.be"))
-                {
-                    // Short URL format
-                    return "https://www.youtube.com/embed" + uri.AbsolutePath;
-                }
-                else if (host.Contains("youtube.com"))
-                {
-                    // Standard URL format
-                    var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
-                    string videoId = query["v"];
-                    return "https://www.youtube.com/embed/" + videoId;
-                }
-            }
-            catch
-            {
-                // Invalid URL
-            }
-
-            return "";
-        }
+       
     }
 }

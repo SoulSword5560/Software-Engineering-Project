@@ -103,8 +103,12 @@
     <Content Include="view\home\home.css" />
     <Content Include="view\library\libraries.aspx" />
     <Content Include="view\library\library.css" />
+    <Content Include="view\Notes\note.aspx" />
+    <Content Include="view\QNA\QNA.aspx" />
+    <Content Include="view\savedVideos\savedVideos.aspx" />
     <Content Include="view\template\template.css" />
     <Content Include="view\video\video.aspx" />
+    <Content Include="view\video\video.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +144,7 @@
     <Compile Include="model\QNA.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="model\qnaViewModel.cs" />
     <Compile Include="model\User.cs">
       <DependentUpon>dbModel.tt</DependentUpon>
     </Compile>
@@ -149,6 +154,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\bookRepo.cs" />
     <Compile Include="repository\dbSingleton.cs" />
+    <Compile Include="repository\noteRepo.cs" />
+    <Compile Include="repository\QNARepo.cs" />
     <Compile Include="repository\userRepo.cs" />
     <Compile Include="repository\videRepo.cs" />
     <Compile Include="view\account\account.aspx.cs">
@@ -200,6 +207,27 @@
     <Compile Include="view\library\libraries.aspx.designer.cs">
       <DependentUpon>libraries.aspx</DependentUpon>
     </Compile>
+    <Compile Include="view\Notes\note.aspx.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Notes\note.aspx.designer.cs">
+      <DependentUpon>note.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\QNA\QNA.aspx.cs">
+      <DependentUpon>QNA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\QNA\QNA.aspx.designer.cs">
+      <DependentUpon>QNA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\savedVideos\savedVideos.aspx.cs">
+      <DependentUpon>savedVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\savedVideos\savedVideos.aspx.designer.cs">
+      <DependentUpon>savedVideos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\template\navbar.Master.cs">
       <DependentUpon>navbar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -235,9 +263,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="view\Notes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
