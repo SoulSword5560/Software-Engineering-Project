@@ -3,26 +3,25 @@
   "WorkspaceRootPath": "D:\\pattern software\\EduLearn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\notes\\note.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\notes\\note.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\qna\\qna.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\qna\\qna.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Note.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.QNA.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Book.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\notes\\note.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\notes\\note.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.BookQNA.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\repository\\noterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\repository\\noterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\qna\\qna.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\qna\\qna.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\home\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\home\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\model\\qnaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\model\\qnaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\template\\navbar.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
@@ -31,6 +30,37 @@
     {
       "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\template\\navbar.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\template\\navbar.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\notes\\note.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\notes\\note.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\repository\\qnarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\repository\\qnarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\repository\\noterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\repository\\noterepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\savedvideos\\savedvideos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\savedvideos\\savedvideos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\notes\\note.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\notes\\note.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Note.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\home\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\home\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\home\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\repository\\viderepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\book\\books.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\video\\video.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\video\\video.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|D:\\pattern software\\EduLearn\\edulearn\\view\\library\\libraries.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\library\\libraries.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|d:\\pattern software\\edulearn\\edulearn\\view\\savedvideos\\savedvideos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{18BBF4CC-BD74-4E83-ACF4-BC70AA07036F}|EduLearn\\EduLearn.csproj|solutionrelative:edulearn\\view\\savedvideos\\savedvideos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.User.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -141,8 +163,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.BookQNA [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.BookQNA.sql",
+              "ToolTip": "dbo.BookQNA [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-27T08:26:36.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.QNA [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.QNA.sql",
+              "ToolTip": "dbo.QNA [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-27T08:25:34.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "qnaViewModel.cs",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\model\\qnaViewModel.cs",
+              "RelativeDocumentMoniker": "EduLearn\\model\\qnaViewModel.cs",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\model\\qnaViewModel.cs",
+              "RelativeToolTip": "EduLearn\\model\\qnaViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T07:44:13.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QNARepo.cs",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\QNARepo.cs",
+              "RelativeDocumentMoniker": "EduLearn\\repository\\QNARepo.cs",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\QNARepo.cs",
+              "RelativeToolTip": "EduLearn\\repository\\QNARepo.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAhwA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T05:57:55.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QNA.aspx.cs",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\QNA\\QNA.aspx.cs",
+              "RelativeDocumentMoniker": "EduLearn\\view\\QNA\\QNA.aspx.cs",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\QNA\\QNA.aspx.cs",
+              "RelativeToolTip": "EduLearn\\view\\QNA\\QNA.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T05:53:36.211Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -150,48 +231,60 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Book.sql",
               "ToolTip": "dbo.Book [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-19T05:08:11.09Z",
+              "WhenOpened": "2025-05-27T05:26:47.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Note [Data]",
+              "DocumentIndex": 0,
+              "Title": "QNA.aspx",
+              "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\QNA\\QNA.aspx",
+              "RelativeDocumentMoniker": "EduLearn\\view\\QNA\\QNA.aspx",
+              "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\QNA\\QNA.aspx",
+              "RelativeToolTip": "EduLearn\\view\\QNA\\QNA.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-27T03:49:37.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "dbo.Note.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Note.sql",
-              "ToolTip": "dbo.Note [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Note.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-19T05:07:47.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T05:07:47.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "noteRepo.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\noteRepo.cs",
               "RelativeDocumentMoniker": "EduLearn\\repository\\noteRepo.cs",
               "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\noteRepo.cs",
               "RelativeToolTip": "EduLearn\\repository\\noteRepo.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAYwEwAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwBMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T04:14:49.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "note.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\Notes\\note.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\Notes\\note.aspx.cs",
               "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\Notes\\note.aspx.cs",
               "RelativeToolTip": "EduLearn\\view\\Notes\\note.aspx.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwBwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T04:13:49.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "note.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\Notes\\note.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\Notes\\note.aspx",
@@ -204,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "video.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\video\\video.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\video\\video.aspx.cs",
@@ -212,12 +305,11 @@
               "RelativeToolTip": "EduLearn\\view\\video\\video.aspx.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T07:23:06.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T07:23:06.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "videRepo.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\videRepo.cs",
               "RelativeDocumentMoniker": "EduLearn\\repository\\videRepo.cs",
@@ -225,22 +317,20 @@
               "RelativeToolTip": "EduLearn\\repository\\videRepo.cs",
               "ViewState": "AgIAAHIAAAAAAAAAAAAAAIIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T07:29:39.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T07:29:39.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "dbo.User [Data]",
+              "DocumentIndex": 22,
+              "Title": "dbo.User.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.User.sql",
-              "ToolTip": "dbo.User [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.User.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-19T03:44:27.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T03:44:27.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "savedVideos.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\savedVideos\\savedVideos.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\savedVideos\\savedVideos.aspx.cs",
@@ -248,12 +338,11 @@
               "RelativeToolTip": "EduLearn\\view\\savedVideos\\savedVideos.aspx.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAiwCoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T08:56:06.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T08:56:06.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "savedVideos.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\savedVideos\\savedVideos.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\savedVideos\\savedVideos.aspx",
@@ -266,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "home.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\home\\home.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\home\\home.aspx",
@@ -274,12 +363,11 @@
               "RelativeToolTip": "EduLearn\\view\\home\\home.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-30T08:26:01.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T08:26:01.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "libraries.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\library\\libraries.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\library\\libraries.aspx",
@@ -287,12 +375,11 @@
               "RelativeToolTip": "EduLearn\\view\\library\\libraries.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-13T08:41:21.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T08:41:21.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "video.css",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\video\\video.css",
               "RelativeDocumentMoniker": "EduLearn\\view\\video\\video.css",
@@ -300,12 +387,11 @@
               "RelativeToolTip": "EduLearn\\view\\video\\video.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-13T07:23:32.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T07:23:32.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "dbo.Video.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Video.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.Video.sql",
@@ -314,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "video.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\video\\video.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\video\\video.aspx",
@@ -322,12 +408,11 @@
               "RelativeToolTip": "EduLearn\\view\\video\\video.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-06T04:25:57.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T04:25:57.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "bookRepo.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\bookRepo.cs",
               "RelativeDocumentMoniker": "EduLearn\\repository\\bookRepo.cs",
@@ -335,12 +420,11 @@
               "RelativeToolTip": "EduLearn\\repository\\bookRepo.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAQwHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:09:03.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T06:09:03.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "libraries.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\library\\libraries.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\library\\libraries.aspx.cs",
@@ -348,12 +432,11 @@
               "RelativeToolTip": "EduLearn\\view\\library\\libraries.aspx.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T06:08:47.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T06:08:47.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "books.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\book\\books.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\book\\books.aspx",
@@ -366,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "dbo.MyBookList.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.MyBookList.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__PATTERN_SOFTWARE_EDULEARN_EDULEARN_APP_DATA_DATABASE.MDF/True/SqlTable/dbo.MyBookList.sql",
@@ -381,14 +464,14 @@
               "RelativeDocumentMoniker": "EduLearn\\view\\template\\navbar.Master.cs",
               "ToolTip": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\navbar.Master.cs",
               "RelativeToolTip": "EduLearn\\view\\template\\navbar.Master.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T08:26:06.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "template.css",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\template\\template.css",
               "RelativeDocumentMoniker": "EduLearn\\view\\template\\template.css",
@@ -396,8 +479,7 @@
               "RelativeToolTip": "EduLearn\\view\\template\\template.css",
               "ViewState": "AgIAAG0AAAAAAAAAAAAiwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-29T04:53:30.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T04:53:30.92Z"
             },
             {
               "$type": "Document",
@@ -414,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "account.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\account\\account.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\account\\account.aspx.cs",
@@ -422,12 +504,11 @@
               "RelativeToolTip": "EduLearn\\view\\account\\account.aspx.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAqwCUAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:20:45.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T06:20:45.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "home.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\home\\home.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\home\\home.aspx.cs",
@@ -435,12 +516,11 @@
               "RelativeToolTip": "EduLearn\\view\\home\\home.aspx.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwDUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T06:11:52.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T06:11:52.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "userRepo.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\repository\\userRepo.cs",
               "RelativeDocumentMoniker": "EduLearn\\repository\\userRepo.cs",
@@ -448,12 +528,11 @@
               "RelativeToolTip": "EduLearn\\repository\\userRepo.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAYwB8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:24:09.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T06:24:09.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "userHandler.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\handler\\userHandler.cs",
               "RelativeDocumentMoniker": "EduLearn\\handler\\userHandler.cs",
@@ -461,12 +540,11 @@
               "RelativeToolTip": "EduLearn\\handler\\userHandler.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAA3wCgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:24:55.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T06:24:55.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "account.css",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\account\\account.css",
               "RelativeDocumentMoniker": "EduLearn\\view\\account\\account.css",
@@ -474,12 +552,11 @@
               "RelativeToolTip": "EduLearn\\view\\account\\account.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAiwBsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-29T05:42:18.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:42:18.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "account.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\account\\account.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\account\\account.aspx",
@@ -487,12 +564,11 @@
               "RelativeToolTip": "EduLearn\\view\\account\\account.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-29T05:31:46.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:31:46.98Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "register.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\authentication\\register.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\authentication\\register.aspx.cs",
@@ -500,12 +576,11 @@
               "RelativeToolTip": "EduLearn\\view\\authentication\\register.aspx.cs",
               "ViewState": "AgIAABUAAAAAAAAAAIA+wCsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T03:58:15.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T03:58:15.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "resetPass.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\authentication\\resetPass.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\authentication\\resetPass.aspx",
@@ -513,12 +588,11 @@
               "RelativeToolTip": "EduLearn\\view\\authentication\\resetPass.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-29T05:03:02.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:03:02.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "resetPass.css",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\authentication\\resetPass.css",
               "RelativeDocumentMoniker": "EduLearn\\view\\authentication\\resetPass.css",
@@ -526,12 +600,11 @@
               "RelativeToolTip": "EduLearn\\view\\authentication\\resetPass.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-29T05:04:52.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:04:52.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "home.css",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\home\\home.css",
               "RelativeDocumentMoniker": "EduLearn\\view\\home\\home.css",
@@ -539,12 +612,11 @@
               "RelativeToolTip": "EduLearn\\view\\home\\home.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-27T06:49:40.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T06:49:40.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "login.aspx",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\authentication\\login.aspx",
               "RelativeDocumentMoniker": "EduLearn\\view\\authentication\\login.aspx",
@@ -552,12 +624,11 @@
               "RelativeToolTip": "EduLearn\\view\\authentication\\login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-03-27T04:51:56.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T04:51:56.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "login.aspx.cs",
               "DocumentMoniker": "D:\\pattern software\\EduLearn\\EduLearn\\view\\authentication\\login.aspx.cs",
               "RelativeDocumentMoniker": "EduLearn\\view\\authentication\\login.aspx.cs",
@@ -565,8 +636,7 @@
               "RelativeToolTip": "EduLearn\\view\\authentication\\login.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T05:01:39.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T05:01:39.408Z"
             }
           ]
         }
