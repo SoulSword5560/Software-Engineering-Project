@@ -126,3 +126,30 @@ header {
     margin: 0; /* Reset margin */
 }
 
+.notif-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 999;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.notif-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+    .notif-item.read {
+        opacity: 0.6;
+    }
+
+    .notif-item.unread {
+        font-weight: bold;
+    }
+
+

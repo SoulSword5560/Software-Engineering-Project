@@ -51,6 +51,7 @@ namespace EduLearn.view
                 int videoId =videRepo.getVideoByName(vidName);
                 Debug.WriteLine("video ID: " + videoId);
                 videRepo.addToLibrary(UserId, videoId);
+                Response.Redirect(Request.RawUrl, false);
             }
         }
     }

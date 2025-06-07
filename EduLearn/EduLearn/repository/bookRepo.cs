@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Web;
 using EduLearn.model;
 
@@ -56,6 +57,22 @@ namespace EduLearn.repository
                 insertCmd.ExecuteNonQuery();
 
                 Console.WriteLine("Book added successfully.");
+                var readNotifs = db.Notifications
+        .Where(n => n.userID == userId && n.is_read == true)
+        .ToList();
+
+                db.Notifications.RemoveRange(readNotifs);
+                db.SaveChanges();
+                var notif = new Notification
+                    {
+                        userID = userId,
+                        messageID = 1,
+                        time_created = DateTime.Now,
+                        is_read = false
+                    };
+                    db.Notifications.Add(notif);
+                db.SaveChanges();
+
             }
         }
 

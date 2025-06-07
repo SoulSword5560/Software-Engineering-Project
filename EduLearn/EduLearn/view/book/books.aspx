@@ -63,7 +63,7 @@
                     <p id="bookNameText"><%# Eval("Name") %></p>
                 </a>
                 <asp:HiddenField ID="hfBookName" runat="server" Value='<%# Eval("Name") %>' />
-                <asp:Button ID="Button1" runat="server" Text="Button" CommandName="AddBook" UseSubmitBehavior="false"/>
+                <asp:Button ID="Button1" runat="server" Text="Add" CommandName="AddBook" UseSubmitBehavior="false"/>
             </div>
              <%# (Container.ItemIndex + 1) % 3 == 0 ? "<div class='divider'></div>" : "" %>
         </ItemTemplate>

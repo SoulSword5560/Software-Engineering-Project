@@ -25,7 +25,7 @@
                     <li><a href='<%= ResolveUrl("~/view/book/books.aspx") %>'>Books</a></li>
                     <li><a href='<%= ResolveUrl("~/view/Notes/note.aspx") %>'>Notes</a></li>
                     <li><a href='<%= ResolveUrl("~/view/QNA/QNA.aspx") %>'>QNA</a></li>
-                    <li><a href="settings.aspx">Settings</a></li>
+                    <li><a href='<%= ResolveUrl("~/view/account/account.aspx") %>'>Settings</a></li>
                 </ul>
                 <div class="user-profile">
                     <asp:HyperLink ID="namee" runat="server" NavigateUrl="~/view/account/account.aspx"></asp:HyperLink>
@@ -39,7 +39,21 @@
                     <div class="topbar">
                         <input type="text" placeholder="Search..." class="search-bar" />
                         <a href="#" class="icon settings-icon">⚙</a>
-                        <a href="#" class="icon notif-icon">🔔</a>
+                        <asp:LinkButton ID="btnNotif" runat="server" CssClass="icon notif-icon" OnClick="btnNotif_Click" CausesValidation="false">
+                            🔔
+    <span id="notif_badge" runat="server" class="notif-badge" visible="false"></span>
+                        </asp:LinkButton>
+                        <div class="notif-container" style="display: none;">
+                            <asp:Repeater ID="rptNotifications" runat="server">
+                                <ItemTemplate>
+                                    <div class="notif-item <%# (bool?)Eval("IsRead") == true ? "read" : "unread" %>">
+    <%# Eval("Message") %><br />
+    <small><%# Eval("Time", "{0:MMM dd, yyyy HH:mm}") %></small>
+</div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
                 </header>
 
@@ -50,4 +64,19 @@
         </div>
     </form>
 </body>
+<script>
+    document.querySelector(".notif-icon").addEventListener("click", function () {
+        var notifBox = document.querySelector(".notif-container");
+        notifBox.style.display = notifBox.style.display === "none" ? "block" : "none";
+    });
+
+    window.onload = function () {
+        var hasNew = <%= notif_badge.Visible.ToString().ToLower() %>;
+        if (hasNew) {
+            document.querySelector(".notif-container").style.display = "block";
+        }
+    };
+
+</script>
+
 </html>

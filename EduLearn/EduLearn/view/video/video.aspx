@@ -67,7 +67,7 @@
                     <p><%# Eval("Description") %></p>
                 </div>
                  <asp:HiddenField ID="hfVideoName" runat="server" Value='<%# Eval("Name") %>' />
-                 <asp:Button ID="Button1" runat="server" Text="Button" CommandName="AddVideo" UseSubmitBehavior="false"/>
+                 <asp:Button ID="Button1" runat="server" Text="Add" CommandName="AddVideo" UseSubmitBehavior="false"/>
             </div>
         </ItemTemplate>
     </asp:Repeater>
