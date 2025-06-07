@@ -13,6 +13,11 @@ namespace EduLearn.view.QNA
         QNARepo repo = new QNARepo();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["user"] == null && Request.Cookies["user"] == null)
+            {
+                Response.Redirect("~/View/authentication/login.aspx");
+            }
             BindQna();
         }
         private void BindQna()

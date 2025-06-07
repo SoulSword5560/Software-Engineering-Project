@@ -48,6 +48,7 @@ namespace EduLearn.view.book
                 int BookId = bookRepo.findBookByName(bookName);
                 Debug.WriteLine("Book ID: " + BookId);
                 bookRepo.addToLibrary(UserId, BookId);
+                Response.Redirect(Request.RawUrl, false);
             }
         }
     }

@@ -48,6 +48,21 @@ namespace EduLearn.repository
                 insertCmd.ExecuteNonQuery();
 
                 Console.WriteLine("note added successfully.");
+                var readNotifs = db.Notifications
+        .Where(n => n.userID == userId && n.is_read == true)
+        .ToList();
+
+                db.Notifications.RemoveRange(readNotifs);
+                db.SaveChanges();
+                var notif = new Notification
+                {
+                    userID = userId,
+                    messageID = 4,
+                    time_created = DateTime.Now,
+                    is_read = false
+                };
+                db.Notifications.Add(notif);
+                db.SaveChanges();
             }
         }
         public List<Note> GetUserNotes(int userId)

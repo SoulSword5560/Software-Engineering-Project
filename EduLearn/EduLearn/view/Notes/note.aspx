@@ -41,7 +41,7 @@
                 <p id="NotesName"><%# Eval("Description") %></p>
             </div>
              <asp:HiddenField ID="hfNoteName" runat="server" Value='<%# Eval("Description") %>' />
-            <asp:Button ID="Button1" runat="server" Text="Button" CommandName="AddNote" UseSubmitBehavior="false"/>
+            <asp:Button ID="Button1" runat="server" Text="Add" CommandName="AddNote" UseSubmitBehavior="false"/>
         </div>
     </ItemTemplate>
 </asp:Repeater>

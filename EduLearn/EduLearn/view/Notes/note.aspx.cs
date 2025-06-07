@@ -48,6 +48,7 @@ namespace EduLearn.view.Notes
                 int noteId = noteRepo.getNoteByName(noteName);
                 Debug.WriteLine("video ID: " + noteId);
                 noteRepo.addToLibrary(UserId, noteId);
+                Response.Redirect(Request.RawUrl, false);
             }
         }
     }

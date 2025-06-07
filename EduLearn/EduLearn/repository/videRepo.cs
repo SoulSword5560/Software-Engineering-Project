@@ -54,6 +54,21 @@ namespace EduLearn.repository
                 insertCmd.ExecuteNonQuery();
 
                 Console.WriteLine("Video added successfully.");
+                var readNotifs = db.Notifications
+        .Where(n => n.userID == userId && n.is_read == true)
+        .ToList();
+
+                db.Notifications.RemoveRange(readNotifs);
+                db.SaveChanges();
+                var notif = new Notification
+                {
+                    userID = userId,
+                    messageID = 2,
+                    time_created = DateTime.Now,
+                    is_read = false
+                };
+                db.Notifications.Add(notif);
+                db.SaveChanges();
             }
         }
 

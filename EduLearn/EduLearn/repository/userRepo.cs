@@ -38,5 +38,10 @@ namespace EduLearn.repository
 			user.password = password;
 			db.SaveChanges();
 		}
+
+		public List<User> getAllUser()
+		{
+			return db.Users.ToList();
+        }
     }
 }
