@@ -15,7 +15,9 @@
             <!-- Sidebar Navbar -->
             <nav class="sidebar">
                 <div class="logo">
-                    <h2>EduLearn</h2>
+                    <img src="<%= ResolveUrl("~/image/logo.png") %>" alt="EduLearn" style="height: 60px; width: auto; margin-right: 10px;" />
+                    <h2 style="margin: 0;">EduLearn</h2>
+
                 </div>
                 <ul class="menu">
                     <li><a href="<%= ResolveUrl("~/view/home/home.aspx") %>">Dashboard</a></li>
@@ -26,6 +28,7 @@
                     <li><a href='<%= ResolveUrl("~/view/Notes/note.aspx") %>'>Notes</a></li>
                     <li><a href='<%= ResolveUrl("~/view/QNA/QNA.aspx") %>'>QNA</a></li>
                     <li><a href='<%= ResolveUrl("~/view/account/account.aspx") %>'>Settings</a></li>
+                    <li><asp:LinkButton ID="LogOut" runat="server" OnClick="Logout_Click">Log Out</asp:LinkButton></li>
                 </ul>
                 <div class="user-profile">
                     <asp:HyperLink ID="namee" runat="server" NavigateUrl="~/view/account/account.aspx"></asp:HyperLink>
@@ -47,9 +50,9 @@
                             <asp:Repeater ID="rptNotifications" runat="server">
                                 <ItemTemplate>
                                     <div class="notif-item <%# (bool?)Eval("IsRead") == true ? "read" : "unread" %>">
-    <%# Eval("Message") %><br />
-    <small><%# Eval("Time", "{0:MMM dd, yyyy HH:mm}") %></small>
-</div>
+                                        <%# Eval("Message") %><br />
+                                        <small><%# Eval("Time", "{0:MMM dd, yyyy HH:mm}") %></small>
+                                    </div>
 
                                 </ItemTemplate>
                             </asp:Repeater>

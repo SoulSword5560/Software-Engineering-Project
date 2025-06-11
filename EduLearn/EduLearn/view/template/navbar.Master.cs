@@ -122,5 +122,23 @@ namespace EduLearn.view
             rptNotifications.DataSource = list;
             rptNotifications.DataBind();
         }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            // Clear session
+            Session.Clear();
+            Session.Abandon();
+
+            // Clear authentication cookie if used
+            if (Request.Cookies["user"] != null)
+            {
+                HttpCookie cookie = new HttpCookie("user");
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
+
+            // Redirect to login page
+            Response.Redirect("~/view/authentication/login.aspx");
+        }
     }
 }

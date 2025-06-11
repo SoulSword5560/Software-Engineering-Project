@@ -79,6 +79,7 @@
     <Content Include="App_Data\database_log.ldf">
       <DependentUpon>database.mdf</DependentUpon>
     </Content>
+    <Content Include="Image\logo.png" />
     <Content Include="model\dbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>dbModel.Context.cs</LastGenOutput>
