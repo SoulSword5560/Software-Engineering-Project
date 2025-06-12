@@ -91,6 +91,11 @@ namespace EduLearn.repository
                 Uri uri = new Uri(url);
                 string host = uri.Host.ToLower();
 
+                if (host.Contains("youtube.com") && uri.AbsolutePath.StartsWith("/embed/"))
+                {
+                    return url;
+                }
+
                 if (host.Contains("youtu.be"))
                 {
                     // Short URL format
@@ -101,7 +106,10 @@ namespace EduLearn.repository
                     // Standard URL format
                     var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
                     string videoId = query["v"];
-                    return "https://www.youtube.com/embed/" + videoId;
+                    if (!string.IsNullOrEmpty(videoId))
+                    {
+                        return "https://www.youtube.com/embed/" + videoId;
+                    }
                 }
             }
             catch
