@@ -10,7 +10,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
         body {
-            font-family: 'Jaro';
+            font-family: 'Poppins', sans-serif;
         }
 
         .home-container {
@@ -25,12 +25,23 @@
         }
 
         .right-section {
-            width: 28%;
+            width: 100%;
+            max-width: 350px;
             background: #f4f4f4;
-            padding: 10px;
-            border-radius: 10px;
-            height: fit-content;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            font-family: 'Poppins', sans-serif;
         }
+
+            .right-section h2 {
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+/*                border-bottom: 2px solid #ccc;*/
+                padding-bottom: 6px;
+                text-align: center;
+            }
 
         .video-section, .book-section {
             background: white;
@@ -45,20 +56,20 @@
         }
 
         .book-card {
-            width: 100px;
+            width: 330px;
             text-align: center;
         }
 
             .book-card img {
                 width: 100%;
-                height: 140px;
+                height: 350px;
                 object-fit: cover;
                 border-radius: 8px;
             }
 
             .book-card a {
                 text-decoration: none;
-                font-family: 'Jaro';
+                font-family: 'Poppins', sans-serif;
                 color: black;
                 font-size: 1.5rem;
                 margin-bottom: 0;
@@ -70,20 +81,33 @@
             background: #e0e0e0;
             border-radius: 8px;
         }
+
         .note-card {
-    background: white;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
 
-.note-card h3 {
-    font-size: 1.2rem;
-    margin: 0 0 5px 0;
-    font-family: 'Jaro';
-}
+            .note-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            }
 
+            .note-card h3 {
+                font-size: 1.1rem;
+                margin: 0;
+                font-family: 'Jaro', sans-serif;
+            }
+
+        .note-card a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            color: black;
+        }
     </style>
 
     <div class="home-container">
@@ -113,6 +137,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- Right Section -->
         <div class="right-section">
